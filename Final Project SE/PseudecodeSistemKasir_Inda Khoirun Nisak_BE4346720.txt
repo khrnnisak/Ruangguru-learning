@@ -1,0 +1,35 @@
+PROGRAM SISTEM KASIR
+
+
+READ AND WRITE "total_harga" with number
+READ AND WRITE "saldo" with number
+READ AND WRITE "uang" with number
+READ AND WRITE "nota" with string
+
+WHILE "continue_shopping" = true
+	STORE "namaBarang" WITH "aqua"
+	STORE "harga" WITH 5000
+	STORE "jumlah" WITH 2
+END WHILE
+PRINT "totalHarga"
+
+IF "with_debit" = true
+	STORE "pin" WITH 201199
+	IF "saldo" more than equal "total_harga"
+		PRINT "Pembayaran Berhasil"
+		PRINT "nota"
+	ELSE
+		PRINT "Saldo anda tidak mencukupi"
+
+ELSE
+	
+	WHILE "uang" less than "total_harga"
+		STORE "uang" WITH 20000
+	END WHILE
+	PRINT "Pembayaran Berhasil"
+	PRINT "nota"
+		
+	
+		
+		
+	
